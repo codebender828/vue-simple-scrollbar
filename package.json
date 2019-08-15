@@ -1,6 +1,6 @@
 {
   "name": "vue-simple-scrollbar",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A light-weight customizable Vue scrollbar component portal for `simple-scrollbar`",
   "author": {
     "name": "Jonathan Bakebwa",
