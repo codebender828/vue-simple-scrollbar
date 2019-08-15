@@ -1,3 +1,5 @@
+![Akkadu](./coverage/badge-branches.svg) ![Akkadu](./coverage/badge-branches.svg) ![Akkadu](./coverage/badge-branches.svg) ![Akkadu](./coverage/badge-branches.svg)
+
 # 🦉 vue-simple-scrollbar
 A simple friendly lightweight scrollbar to make take your scrollbar game to the next level. This awesome package was ported from the awesome [simple-scrollbar](https://github.com/buzinas/simple-scrollbar)
 
@@ -97,10 +99,9 @@ new Vue({
   }
 }).$mount('#app')
 </script>
-
-
 ```
 ### Contributing:
+Please read [CONTRIBUTING.md](https://github.com/Akkadu/Akkadu_WebApp/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ### License:
 
