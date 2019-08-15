@@ -100,11 +100,26 @@ new Vue({
 }).$mount('#app')
 </script>
 ```
+
+### 🥦 TODO:
+- [ ] Server side rendering support with Vue SSR and Nuxt.js
+- [ ] Custom styling via props.
+- [ ] Smart padding of wrapper component.
+- [ ] Design Logo.
+- [ ] Do more epic things.
+
+
 ### Contributing:
-Please read [CONTRIBUTING.md](https://github.com/Akkadu/Akkadu_WebApp/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read the [Contribution Guide](./.github/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
-### License:
+### License: MIT
+Please read [License](./LICENSE) documentation for more information
 
+### Contributors
+Waiting for you ❤️. Feel free to take a stab at one of the upcimg tasks or open issues.
+
+### 🍇 Author 
 Made with love by Jonathan Bakebwa.
 👣 Github: [@codebender828](https://github.com/codebender828)
 🦅 Twitter: [@codebender828](https://twitter.com/codebender828)
+
