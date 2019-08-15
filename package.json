@@ -1,10 +1,34 @@
 {
   "name": "vue-simple-scrollbar",
   "version": "0.1.0",
-  "private": true,
+  "description": "A light-weight customizable Vue scrollbar component portal for `simple-scrollbar`",
+  "author": {
+    "name": "Jonathan Bakebwa",
+    "url": "https://github.com/codebender828"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codebender828/vue-simple-scrollbar"
+  },
+  "main": "dist/vue-simple-scrollbar.umd.js",
+  "module": "dist/vue-simple-scrollbar.esm.js",
+  "unpkg": "dist/vue-simple-scrollbar.min.js",
+  "browser": {
+    "./sfc": "src/components/vue-simple-scrollbar.vue"
+  },
+  "keywords": [
+    "vue",
+    "parrots",
+    "scrollbar",
+    "simple-scrollbar",
+    "vue-simple-scrollbar"
+  ],
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:npm": "vue-cli-service build --target lib --name vue-simple-scrollbar src/components/vue-simple-scrollbar.vue",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
