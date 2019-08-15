@@ -10,7 +10,8 @@ Vue simple scrollbar creates an elegant, customizable lightweight javascript scr
 - No dependencies, completely vanilla Javascript!
 
 ## ⚡️ Demo
-Very ugly demo here: [Demo]()
+Very ugly demo here: [Demo](https://vue-simple-scrollbar.netlify.com/)
+Don't worry! Will make it more elegant later!
 
 ## 📦 Installation
 
@@ -107,6 +108,7 @@ new Vue({
 - [ ] Server side rendering support with Vue SSR and Nuxt.js
 - [ ] Custom styling via props.
 - [ ] Smart padding of wrapper component.
+- [ ] Make site more elegant
 - [ ] Design Logo.
 - [ ] Do more epic things.
 
