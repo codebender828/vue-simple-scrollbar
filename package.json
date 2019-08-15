@@ -25,19 +25,26 @@
     "vue-simple-scrollbar"
   ],
   "private": false,
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "build:npm": "vue-cli-service build --target lib --name vue-simple-scrollbar src/components/vue-simple-scrollbar.vue",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "test:coverage": "yarn test:unit -- --coverage",
+    "test:badges": "yarn test:coverage  && jest-coverage-badges"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "jest-coverage-badges": "^1.1.2",
     "nprogress": "^0.2.0",
     "simple-scrollbar": "^0.4.0",
     "vue": "^2.6.10",
-    "vue-router": "^3.1.2"
+    "vue-router": "^3.1.2",
+    "vue-simple-scrollbar": "^0.1.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.10.0",

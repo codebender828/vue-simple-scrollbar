@@ -5630,6 +5630,13 @@ jest-config@^23.6.0:
     micromatch "^2.3.11"
     pretty-format "^23.6.0"
 
+jest-coverage-badges@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/jest-coverage-badges/-/jest-coverage-badges-1.1.2.tgz#a70786b139fd8fb685db732e1e2d916d8a47287e"
+  integrity sha512-44A7i2xR6os8+fWk8ZRM6W4fKiD2jwKOLU9eB3iTIIWACd9RbdvmiCNpQZTOsUBhKvz7aQ/ASFhu5JOEhWUOlg==
+  dependencies:
+    mkdirp "0.5.1"
+
 jest-diff@^23.6.0:
   version "23.6.0"
   resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-23.6.0.tgz#1500f3f16e850bb3d71233408089be099f610c7d"
@@ -9968,6 +9975,17 @@ vue-router@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.1.2.tgz#2e0904703545dabdd42b2b7a2e617f02f99a1969"
   integrity sha512-WssQEHSEvIS1/CI4CO2T8LJdoK4Q9Ngox28K7FDNMTfzNTk2WS5D0dDlqYCaPG+AG4Z8wJkn1KrBc7AhspZJUQ==
+
+vue-simple-scrollbar@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/vue-simple-scrollbar/-/vue-simple-scrollbar-0.1.1.tgz#31d5ee48a8aafe7f2999cd5e06380c305d420d64"
+  integrity sha512-XKuhOclu91j7en3zQybB/FEU0vpP+x/jsdGLrcx8hZ4ur3YYs07Wk3JWiTp/5XFZL313gu9oCS5ED85zb5e4mA==
+  dependencies:
+    core-js "^2.6.5"
+    nprogress "^0.2.0"
+    simple-scrollbar "^0.4.0"
+    vue "^2.6.10"
+    vue-router "^3.1.2"
 
 vue-style-loader@^4.1.0:
   version "4.1.2"
