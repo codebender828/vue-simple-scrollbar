@@ -86,8 +86,8 @@ In your good old trusty HTML:
 <meta charset="utf-8">
 <title>My Page</title>
 <script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/vue-simple-scrollbar@0.1.1/dist/vue-simple-scrollbar.umd.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/vue-simple-scrollbar@0.1.1/dist/vue-simple-scrollbar.css">
+<script src="https://unpkg.com/vue-simple-scrollbar@latest/dist/vue-simple-scrollbar.umd.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/vue-simple-scrollbar@latest/dist/vue-simple-scrollbar.css">
 
 
 <div id="app">
