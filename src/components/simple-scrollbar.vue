@@ -14,12 +14,12 @@ export default {
       simpleScroll: undefined
     }
   },
-  async mounted () {
-    await this.$nextTick()
-    this.polyfillIE9()
-    this.simpleScroll = SimpleScrollbar
-    const el = this.$refs.el
-    this.simpleScroll.initEl(el)
+  mounted () {
+    this.$nextTick(() => {
+      this.simpleScroll = SimpleScrollbar
+      const el = this.$refs.el
+      this.simpleScroll.initEl(el)
+    })
   }
 }
 </script>
@@ -42,7 +42,7 @@ export default {
 .ss-content {
   height: 100%;
   width: calc(100% + 18px);
-  padding: 0 18px 0 0;
+  padding: 0 12px 0 0;
   position: relative;
   overflow: auto;
   box-sizing: border-box;
@@ -56,7 +56,7 @@ export default {
 .ss-scroll {
   position: relative;
   background: rgba(0, 0, 0, 0.1);
-  width: 9px;
+  width: 8px;
   border-radius: 4px;
   top: 0;
   z-index: 2;
