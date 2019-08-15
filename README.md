@@ -5,7 +5,7 @@ A simple friendly lightweight scrollbar to make take your scrollbar game to the 
 
 ## How it works?
 Vue simple scrollbar creates an elegant, customizable lightweight javascript scrollbar for content that overflows the `vue-simple-scrollbar`'s parent element. Out of the box, `vue-simple-scrollbar` gives you:
-- Super fast and lightweight (less than 3KB after gzip and minify)
+- Super fast and lightweight (2.1KB after gzip and minify)
 - It uses the native scroll events(mouse wheel, space, page down, page up, arrows)
 - No dependencies, completely vanilla Javascript!
 
@@ -128,6 +128,4 @@ Made with love by Jonathan Bakebwa.
 🦅 Twitter: [@codebender828](https://twitter.com/codebender828)
 
 ### ☕️ Support
-Do you like my work? Buy me a coffee! 
-
-<style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background:linear-gradient(330deg, #0092ff, #0062ff); !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 22px !important;letter-spacing:0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family: 'Dosis', sans-serif !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/dIlWof6x5"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="Buy me a coffee ❤️"><span style="margin-left:5px">Buy me a coffee ❤️</span></a>
+Do you like my work? [Buy me a coffee!](https://www.buymeacoffee.com/dIlWof6x5)
