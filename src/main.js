@@ -1,7 +1,6 @@
 import Vue from 'vue'
-import App from './app.vue'
+import App from './App.vue'
 import router from './router'
-// import 'vue-simple-scrollbar/dist/vue-simple-scrollbar.css'
 
 Vue.config.productionTip = false
 Vue.config.devtools = true

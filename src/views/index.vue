@@ -1,5 +1,6 @@
 <template>
   <main class="application">
+    <router-link class="link" to="/showcase">Showcase</router-link>
     <div class="clip">
     <vue-simple-scrollbar class="test">
       <p>{{ greeting }}</p>
@@ -28,6 +29,7 @@ export default {
 .application {
   background: #efefef;
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -37,6 +39,21 @@ export default {
     width: 300px;
     height: 400px;
     background: #ffffff;
+  }
+}
+
+.link {
+  margin-bottom: 50px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color:#fff;
+  background: #0087ff;
+  transition: all 0.1s ease-in;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &:hover {
+    background: #363636;
   }
 }
 </style>

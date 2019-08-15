@@ -1,9 +1,12 @@
 <template>
-  <div class="case-1">
-    <vue-simple-scrollbar>
-      {{ obscenelyLongString }}
-    </vue-simple-scrollbar>
-  </div>
+  <main>
+    <router-link class="link" to="/">Return Home</router-link>
+    <div class="case-1">
+      <vue-simple-scrollbar>
+        {{ obscenelyLongString }}
+      </vue-simple-scrollbar>
+    </div>
+  </main>
 </template>
 
 <script>
@@ -54,11 +57,36 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 @import '~vue-simple-scrollbar/dist/vue-simple-scrollbar.css';
 
 .case-1 {
   height: 300px;
   width: 500px;
 }
+
+.link {
+  margin-bottom: 50px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color:#fff;
+  background: #0087ff;
+  transition: all 0.1s ease-in;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &:hover {
+    background: #363636;
+  }
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 </style>
