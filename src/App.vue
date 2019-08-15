@@ -1,5 +1,9 @@
 <template>
   <main class="application">
+    <h1 class="title">Vue Simple Scrollbar</h1>
+    <h3 class="subtitle">A simple friendly lightweight Vue.js scrollbar to make take your scrollbar game to the next level.</h3>
+    <br>
+    <p>Hover over the text to view it in action</p>
     <keep-alive>
       <transition :name="transition">
         <router-view />
@@ -46,6 +50,7 @@ body {
 .application {
   background: #efefef;
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -56,6 +61,14 @@ body {
     height: 400px;
     background: #ffffff;
   }
+}
+
+.title {
+  margin-top: 100px;
+}
+
+.subtitle {
+  font-weight: 300;
 }
 
 .slide-right-move,

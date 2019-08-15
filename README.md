@@ -115,10 +115,10 @@ new Vue({
 Please read the [Contribution Guide](./.github/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ### License: MIT
-Please read [License](./LICENSE) documentation for more information
+Please read the [license](./LICENSE) documentation for more information
 
 ### Contributors
-Waiting for you ❤️. Feel free to take a stab at one of the upcimg tasks or open issues.
+Waiting for you ❤️. Feel free to take a stab at one of the upcoming tasks or open issues.
 
 ### 🍇 Author 
 Made with love by Jonathan Bakebwa.
