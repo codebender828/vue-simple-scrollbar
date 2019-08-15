@@ -1,20 +1,20 @@
 <template>
   <main class="application">
     <div class="clip">
-      <simple-scrollbar class="test">
+      <vue-simple-scrollbar class="test">
         <p>{{ greeting }}</p>
-      </simple-scrollbar>
+      </vue-simple-scrollbar>
     </div>
   </main>
 </template>
 
 <script>
-import SimpleScrollbar from '@/components/simple-scrollbar.vue'
+import VueSimpleScrollbar from '@/components/simple-scrollbar.vue'
 
 export default {
   name: 'App',
   components: {
-    SimpleScrollbar
+    VueSimpleScrollbar
   },
   data () {
     return {

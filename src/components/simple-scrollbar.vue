@@ -1,4 +1,3 @@
-import SimpleScrollbar from '@/components/simple-scrollbar.vue';
 <template>
   <div ref="el" class="v-ss">
     <slot name="default"></slot>
@@ -9,7 +8,7 @@ import SimpleScrollbar from '@/components/simple-scrollbar.vue';
 import SimpleScrollbar from 'simple-scrollbar'
 
 export default {
-  name: 'SimpleScrollbar',
+  name: 'VueSimpleScrollbar',
   data () {
     return {
       simpleScroll: undefined
