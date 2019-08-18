@@ -1,5 +1,5 @@
 <template>
-  <div ref="el" class="v-ss">
+  <div ref="el" :style="{ '--scrollbar-color': scrollbarColor }" class="v-ss">
     <slot name="default"></slot>
   </div>
 </template>
@@ -14,6 +14,12 @@ export default {
       simpleScroll: undefined
     }
   },
+  props: {
+    scrollbarColor: {
+      type: String,
+      default: 'rgba(0, 0, 0, 0.1)'
+    }
+  },
   mounted () {
     this.$nextTick(() => {
       this.simpleScroll = SimpleScrollbar
@@ -25,12 +31,18 @@ export default {
 </script>
 
 <style lang="scss">
+
+:root {
+  --scrollbar-color: unset;
+}
+
 .v-ss {
   height: inherit;
   width: inherit;
 }
 
 .ss-wrapper {
+  --scrollbar-color: inherit;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -54,8 +66,9 @@ export default {
 }
 
 .ss-scroll {
+  --scrollbar-color: inherit;
   position: relative;
-  background: rgba(0, 0, 0, 0.1);
+  background: var(--scrollbar-color);
   width: 8px;
   border-radius: 4px;
   top: 0;

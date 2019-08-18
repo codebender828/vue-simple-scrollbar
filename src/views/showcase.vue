@@ -1,8 +1,11 @@
 <template>
   <main>
     <router-link class="link" to="/">Return Home</router-link>
+    <button @click="scrollbarColor = 'coral'" >Change to coral</button>
     <div class="case-1">
-      <vue-simple-scrollbar>
+      <vue-simple-scrollbar
+        :scrollbar-color="scrollbarColor"
+      >
         {{ obscenelyLongString }}
       </vue-simple-scrollbar>
     </div>
@@ -10,7 +13,7 @@
 </template>
 
 <script>
-import VueSimpleScrollbar from 'vue-simple-scrollbar'
+import VueSimpleScrollbar from '@/components/vue-simple-scrollbar.vue'
 
 export default {
   name: 'Showcase',
@@ -19,6 +22,7 @@ export default {
   },
   data () {
     return {
+      scrollbarColor: '#0062ff',
       obscenelyLongString: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, iure, tempore atque ratione
         eveniet, aperiam repellat sequi accusamus facilis repudiandae obcaecati. Blanditiis reprehenderit ducimus
         modi voluptate ea assumenda ut neque, ratione praesentium aut voluptates quis pariatur? Eum neque fuga
@@ -58,7 +62,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '~vue-simple-scrollbar/dist/vue-simple-scrollbar.css';
 
 .case-1 {
   height: 300px;
