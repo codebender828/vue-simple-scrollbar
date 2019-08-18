@@ -40,12 +40,12 @@ In your template file
 </template>
 
 <script lang="js">
-import VueSimpleScript from 'vue-simple-scrollbar'
+import VueSimpleScrollbar from 'vue-simple-scrollbar'
 
 export default {
   name: 'MyComponent',
   components: {
-    VueSimpleScript
+    VueSimpleScrollbar
   },
   data() {
     return {
@@ -105,13 +105,20 @@ new Vue({
 ```
 
 ### 🥦 TODO:
-- [ ] Server side rendering support with Vue SSR and Nuxt.js
-- [ ] Custom styling via props.
-- [ ] Smart padding of wrapper component.
-- [ ] Make site more elegant
-- [ ] Design Logo.
-- [ ] Do more epic things.
-
+- [x]  Dynamic styles/colors
+  - [x]  Github issue template
+  - [x]  Pull request template
+- [x]  Custom styling via props.
+- [ ]  Smart padding of inner wrapper markup.
+  - [ ]  Dynamic smart padding via props
+- [ ]  Documentation Site
+- [ ]  Auto Scroll control and behaviour
+- [ ]  Server side rendering support with Vue SSR and Nuxt.js
+- [ ]  Make demo site more elegant.
+  - [ ]  Use Saber for docs
+  - [ ]  Make CodeSandbox demos
+  - [ ]  Write articles
+- [ ]  Design Logo
 
 ### Contributing:
 Please read the [Contribution Guide](./.github/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
