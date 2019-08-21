@@ -5,7 +5,7 @@
       <vue-simple-scrollbar
         :auto-scroll="true"
         scroll-behavior="smooth"
-        auto-scroll-direction="down"
+        auto-scroll-direction="bottom"
       >
         <p>{{ longText }}</p>
       </vue-simple-scrollbar>
