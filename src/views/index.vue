@@ -3,6 +3,9 @@
     <router-link class="link" to="/showcase">View showcase</router-link>
     <div class="clip">
       <vue-simple-scrollbar
+        :auto-scroll="true"
+        scroll-behavior="smooth"
+        auto-scroll-direction="bottom"
       >
         <p>{{ longText }}</p>
       </vue-simple-scrollbar>
