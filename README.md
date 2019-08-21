@@ -104,15 +104,54 @@ new Vue({
 </script>
 ```
 
+## Props:
+|Name|Description|Type|Required|Default|Values|
+|---|---|---|---|---|---|
+|`color`|Background color scrollbar|`String` |`false`|`rgba(0, 0, 0, 0.1);`||
+|`autoScroll`|Watches for changes in DOM content via the Mutation Observer API and automatically scrolls to `autoscrollDirection`|`String` |`false`|`false`|
+|`autoScrollDirection`|Direction of auto scroll behavior|`String` |`false`|`bottom`|`bottom`, `top`|
+|`scrollBehavior`|Behaviour of scroll animation|`String` |`false`|`rgba(0, 0, 0, 0.1);`|`smooth`|
+
+### Programmatically Scrolling `vue-simple-scrollbar`
+`vue-simple-scrollbar` can also be programmatically scrolled for content that is dynamic in nature. This can be done by directly calling the scroll methods on the `vue-simple-scrollbar` component.
+
+```html
+<template>
+  <div>
+    <vue-simple-scrollbar ref="scrollbarWrapper">
+      ... content ...
+    </vue-simple-scrollbar>
+  </div>
+</template>
+
+<script lang="js">
+import VueSimpleScrollbar from 'vue-simple-scrollbar'
+
+export default {
+  name: 'ParentComponent',
+  components: {
+    VueSimpleScrollbar
+  },
+  mounted() {
+    // Programmatically scroll content to bottom
+    this.$refs.scrollbarWrapper.scrollToBottom()
+
+    // Programmatically scroll content to top
+    this.$refs.scrollbarWrapper.scrollToTop()
+  }
+}
+</script>
+```
+
 ### 🥦 TODO:
 - [x]  Dynamic styles/colors
   - [x]  Github issue template
   - [x]  Pull request template
 - [x]  Custom styling via props.
+- [x]  Auto Scroll control and behaviour
 - [ ]  Smart padding of inner wrapper markup.
   - [ ]  Dynamic smart padding via props
 - [ ]  Documentation Site
-- [ ]  Auto Scroll control and behaviour
 - [ ]  Server side rendering support with Vue SSR and Nuxt.js
 - [ ]  Make demo site more elegant.
   - [ ]  Use Saber for docs

@@ -11,13 +11,26 @@ export default {
   name: 'VueSimpleScrollbar',
   data () {
     return {
-      simpleScroll: undefined
+      simpleScroll: undefined,
+      content: undefined
     }
   },
   props: {
     scrollbarColor: {
       type: String,
       default: 'rgba(0, 0, 0, 0.1)'
+    },
+    autoScroll: {
+      type: Boolean,
+      default: false
+    },
+    autoScrollDirection: {
+      type: String,
+      default: 'bottom'
+    },
+    scrollBehavior: {
+      type: String,
+      default: 'unset'
     }
   },
   mounted () {
@@ -25,8 +38,51 @@ export default {
       this.simpleScroll = SimpleScrollbar
       const el = this.$refs.el
       this.simpleScroll.initEl(el)
+
+      this.content = el.querySelector('.ss-wrapper > .ss-content')
+      this.content.style.setProperty('scroll-behavior', this.scrollBehavior)
+
+      if (this.autoScroll && this.content) {
+        const autoScrollOptions = {
+          childList: true,
+          subtree: true
+        }
+        this.initializeMutationObserver(this.content, {
+          options: autoScrollOptions,
+          handler: this.autoScrollDirection === 'bottom' ? this.scrollToBottom : this.scrollToTop
+        })
+      }
     })
+  },
+  methods: {
+    /**
+     * @description Scrolls content container to bottom
+     */
+    scrollToBottom () {
+      if (!this.content) return
+      this.content.scrollTo(0, this.content.scrollHeight)
+    },
+    /**
+     * @description Scrolls content container to top
+     */
+    scrollToTop () {
+      if (!this.content) return
+      this.content.scrollTo(0, 0)
+    },
+    /**
+     * @description Initializes mutation observer on a specific node in the DOM. Accepts the node as first parameter and options as well as the handler in the secon parameter.
+     * @param {HTMLElement} node
+     * @param {{options: Object, handler: Function}} options
+     * @returns {MutationObserver}
+     */
+    initializeMutationObserver (node, { options, handler }) {
+      if (!node || !handler) return
+      const observer = new MutationObserver(handler)
+      observer.observe(node, options)
+      return observer
+    }
   }
+
 }
 </script>
 

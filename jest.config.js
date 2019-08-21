@@ -26,6 +26,7 @@ module.exports = {
     'text',
     'lcov'
   ],
+  setupFiles: ['./jest.setup.js'],
   testURL: 'http://localhost/',
   watchPlugins: [
     'jest-watch-typeahead/filename',
