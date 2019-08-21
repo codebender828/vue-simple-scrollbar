@@ -26,7 +26,7 @@ export default {
     },
     autoScrollDirection: {
       type: String,
-      default: 'down'
+      default: 'bottom'
     },
     scrollBehavior: {
       type: String,
@@ -49,7 +49,7 @@ export default {
         }
         this.initializeMutationObserver(this.content, {
           options: autoScrollOptions,
-          handler: this.autoScrollDirection === 'down' ? this.scrollToBottom : this.scrollToTop
+          handler: this.autoScrollDirection === 'bottom' ? this.scrollToBottom : this.scrollToTop
         })
       }
     })
