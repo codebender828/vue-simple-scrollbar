@@ -107,7 +107,7 @@ new Vue({
 ## Props:
 |Name|Description|Type|Required|Default|Values|
 |---|---|---|---|---|---|
-|`color`|Background color scrollbar|`String` |`false`|`rgba(0, 0, 0, 0.1);`||
+|`scrollbarColor`|Background color scrollbar|`String` |`false`|`rgba(0, 0, 0, 0.1);`||
 |`autoScroll`|Watches for changes in DOM content via the Mutation Observer API and automatically scrolls to `autoscrollDirection`|`String` |`false`|`false`|
 |`autoScrollDirection`|Direction of auto scroll behavior|`String` |`false`|`bottom`|`bottom`, `top`|
 |`scrollBehavior`|Behaviour of scroll animation|`String` |`false`|`rgba(0, 0, 0, 0.1);`|`smooth`|
